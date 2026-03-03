@@ -393,7 +393,7 @@ function findMarkdownFiles(
             const nameWithoutExt = lowerName.slice(0, -matchingExt.length);
             const nameParts = nameWithoutExt.split(".");
             if (nameParts.length > 1) {
-              const lastPart = nameParts[nameParts.length - 1] || '';
+              const lastPart = nameParts[nameParts.length - 1] || "";
               if (FIXTURE_SUFFIXES.includes(lastPart)) {
                 continue;
               }
